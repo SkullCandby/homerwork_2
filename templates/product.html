@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table, th, td {
+  border:3px solid black;
+}
+.ent {
+  color: red;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include "navigation.html" %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+<table style="width:100%">
+  <tr>
+    <th>Type</th>
+    <th>1.	Student Dev Pro</th>
+    <th>2.	Student Basic</th>
+    <th>3.	Student Gamer PC</th>
+  </tr>
+  <tr>
+    <td>Prices</td>
+    <td><span class="ent">&euro;</span> 2,319.99</td>
+    <td><span class="ent">&dollar;</span> 899.99</td>
+    <td><span class="ent">&pound;</span> 1,299.99</td>
+  </tr>
+  <tr>
+    <td>System</td>
+    <td>Windows 10 Home 64</td>
+    <td>Windows 10 Home 64</td>
+    <td>Windows 10 Home 64</td>
+  </tr>
+  <tr>
+    <td>Proccesor</td>
+    <td>Intel<span class="ent">&reg;</span> Core<span class="ent">&trade;</span> i7-7700HQ <span class="ent">&lpar;</span>2.8 GHz, up to 3.8 GHz, 6MB cache<span class="ent">&rpar;</span></td>
+    <td>Intel<span class="ent">&reg;</span> Core<span class="ent">&trade;</span> i7-8750H <span class="ent">&lpar;</span>2.2 GHz, up to 4.1 GHz, 9MB cache<span class="ent">&rpar;</span> </td>
+    <td>Intel<span class="ent">&reg;</span> Core<span class="ent">&trade;</span> i7-8750H <span class="ent">&lpar;</span>2.2 GHz, up to 4.1 GHz, 9MB cache<span class="ent">&rpar;</span> </td>
+  </tr>
+  <tr>
+    <td>Video Proccesor</td>
+    <td>NVIDIA<span class="ent">&reg;</span> GeForce<span class="ent">&reg;</span> GTX 1080 <span class="ent">&lpar;</span>8GB GDDR5X dedicated<span class="ent">&rpar;</span></td>
+    <td>NVIDIA<span class="ent">&reg;</span> GeForce<span class="ent">&reg;</span> GTX 1050 <span class="ent">&lpar;</span>2GB GDDR5 dedicated<span class="ent">&rpar;</span></td>
+    <td>NVIDIA<span class="ent">&reg;</span> GeForce<span class="ent">&reg;</span> GTX 1060 <span class="ent">&lpar;</span>6GB GDDR5 dedicated<span class="ent">&rpar;</span></td>
+  </tr>
+  <tr>
+    <td>Other</td>
+    <td>32GB DDR4-2400 SDRAM<span class="ent">&semi;</span> 512GB PCIe<span class="ent">&reg;</span> NVMe<span class="ent">&trade;</span> M.2 SSD<span class="ent">&semi;</span> 1TB SATA</td>
+    <td>8GB DDR4-2666 SDRAM<span class="ent">&semi;</span> 1TB 7200 rpm SATA</td>
+    <td>16GB DDR4-2666 SDRAM<span class="ent">&semi;</span> 1TB 7200 rpm SATA<span class="ent">&semi;</span> 16GB PCIe<span class="ent">&reg;</span> NVme<span class="ent">&trade;</span> Intel<span class="ent">&reg;</span></td>
+  </tr>
+</table>
+</body>
+<footer> &copy; Student Inc.</footer>
+</html>

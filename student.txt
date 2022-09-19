@@ -1,0 +1,3 @@
+student name: Gleb Meshkov
+student number: 698924
+student class: IT1D
