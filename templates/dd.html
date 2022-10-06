@@ -1,0 +1,125 @@
+<Digitalize html>
+  <html>
+    <head>
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300&display=swap" rel="stylesheet">
+    <style>
+        /*
+        text align
+        telephone
+        */
+        body {
+          font-family: 'Noto Sans Mono', monospace;
+          font-size: 1.5em;
+          background-image: url(.img/IMG_7127.jpg);
+          height: 125%;
+          min-height: 1300px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        h1 {
+          position: absolute;
+          top: 25px;
+          left: 150px;
+          background-image: url(.img/Logo.svg.png);
+          height: 160px;
+          width: 450px;
+          background-repeat: no-repeat;
+          background-size: 120px, 43px;
+        }
+        h2 {
+          position: absolute;
+          top: 100px;
+          left: 150px;
+        }
+        label {
+          position: absolute;
+          margin-top: 40px;
+          margin-left: 150px;
+        }
+        input, .inp {
+          position: relative;
+          margin-left: 500px;
+          margin-top: 40px;
+          height: 50px;
+          width: 350px;
+          font-family: 'Noto Sans Mono', monospace;
+          font-size: 0.75em;
+          text-align: left;
+          height:40px;
+          line-height:40px;
+          padding:0 5px;
+        }
+
+        .line {
+          background-color: black;
+          position: absolute;
+          margin-top: 400px;
+          left: 150px;
+          width: 500px;
+          height: 1px;
+        }
+
+        #first_label {
+          position: absolute;
+          margin-top: 200px;
+        }
+
+        #NameOfProposer {
+
+          margin-top: 200px;
+        }
+
+        #enter {
+          position: absolute;
+          margin-left: 150;
+          margin-top: 15px;
+          width: 300px;
+          background-color: #0088cc;
+          border-radius: 16px;
+          text-align: center;
+        }
+
+
+      </style>
+    </head>
+  <body>
+    <h1></h1>
+    <h2> Insurance form </h2>
+
+    <form action="http://">
+
+      <label for="NameOfProposer" id="first_label">Name: </label>
+      <input type="text" id="NameOfProposer" name="NameOfProposer" value=""><br><br>
+
+      <label for="Address">Address: </label>
+      <textarea id="Address" name="Address" class="inp" style="width: 350px; height: 200px;"></textarea><br><br>
+
+      <label for="City">City: </label>
+      <input type="text" id="City" name="City" value=""><br><br>
+
+      <label for="State">State: </label>
+      <input type="text" id="State" name="State" value=""><br><br>
+
+      <label for="Postcode">Postcode: </label>
+      <input type="text" id="Postcode" name="State" value=""><br><br>
+
+      <label for="TelephoneNUmber">Telephone number: </label>
+      <input type="tel" id="TelephoneNumber" name="TelephoneNumber" placeholder="Format: 12345678910" pattern="[0-9]{11}" required><br><br>
+
+      <label for="MobileNumber">Mobile number: </label>
+      <input type="tel" id="MobileNumber" name="MobileNumber" placeholder="Format: 12345678910" pattern="[0-9]{11}" required><br><br>
+
+      <label for="NRIC">NRIC Number: </label>
+      <input type="text" id="NRIC" name="NRIC" value=""><br><br>
+
+
+      <input type="submit" value="Submit Form" id="enter">
+
+    </form>
+  </body>
+  </html>
+</Digitalize>
